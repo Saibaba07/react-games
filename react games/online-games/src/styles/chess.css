@@ -1,0 +1,61 @@
+/* Fullscreen background with gradient */
+body {
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Chess Container */
+.chess-container {
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+}
+
+/* Title */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Buttons Section */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Reset & Home Buttons */
+.reset-btn, .home-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Reset Button */
+.reset-btn {
+    background: #ff5f5f;
+    color: white;
+}
+.reset-btn:hover {
+    background: #e53e3e;
+}
+
+/* Home Button */
+.home-btn {
+    background: #4caf50;
+    color: white;
+}
+.home-btn:hover {
+    background: #3e8e41;
+}

@@ -1,0 +1,91 @@
+.tictactoe-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px); /* 3 columns */
+  grid-template-rows: repeat(3, 80px); /* 3 rows */
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+
+.square {
+  width: 80px;
+  height: 80px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.square:hover {
+  background-color: #0056b3;
+}
+
+.square.winner {
+  background-color: #28a745;
+  color: rgb(6, 5, 5);
+}
+
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+}
+
+.reset-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.reset-btn:hover {
+  background-color: #0056b3;
+}
+
+.mode-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.toggle-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: #007bff; /* Default blue */
+  transition: background-color 0.3s;
+}
+
+.toggle-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.toggle-btn.active {
+  background-color: #28a745; /* Green when selected */
+}
+
+.status{
+  color:black ;
+}
